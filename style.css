@@ -1,0 +1,363 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+     border: 0px none;
+     margin: 0px;
+     padding: 0px;
+     vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+     display: block;
+}
+
+body, html {
+     color: #333333;
+     font-family: "Lato",sans-serif;
+     font-size: 16px;
+     height: 100%;
+     line-height: 1.2;
+     margin: 0px;
+     padding: 0px;
+     text-align: left;
+}
+
+ol, ul {
+     list-style: outside none none;
+}
+
+blockquote, q {
+     quotes: none;
+}
+
+blockquote::before, blockquote::after, q::before, q::after {
+     content: none;
+}
+
+table {
+     border-collapse: collapse;
+     border-spacing: 0px;
+}
+
+*, *::before, *::after {
+     box-sizing: border-box;
+}
+
+.clearfix::after {
+     clear: both;
+     content: "";
+     display: table;
+}
+
+#wrapper{
+    position: relative;
+    width:100%;
+    
+}
+
+
+
+/*video trailer*/
+#close{
+position: absolute;
+top:10px;
+right:0px;
+}
+
+    #myVideo{
+        position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width:88%;
+    min-height:88%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+
+
+
+a{
+ color:#1696d2;
+ text-decoration: none;
+   
+}
+
+a:hover{
+ color:#000;
+ text-decoration: none;    
+    
+}
+
+h1{
+    font-weight: 700;
+    font-size:30px;
+    color:#000;
+    margin-bottom: 5px;
+}
+
+.credits{
+  font-size:12px;
+    text-transform: uppercase;
+    color:#666;
+    padding-bottom: 30px;
+  
+}
+
+
+#urbanu{
+margin-bottom: 10px;
+}
+
+
+/*social media icons on index*/
+#homesocial{
+    width: 175px;
+    height: 40px;
+    margin-bottom: 10px;
+    margin-top: 60px;
+}
+
+#homesocial a{
+margin-right:5px;
+    
+}
+
+#homesocial a:hover{
+    opacity: .5;
+    
+}
+
+
+
+
+
+p{
+    color:#333;   
+}
+
+.lead{
+    font-size:19px;  
+}
+
+.emphasis{
+    font-style: italic; 
+}
+
+.bold{
+    font-weight:700;
+}
+
+.stories{
+    width:100%;
+    height:270px;
+
+}
+
+
+
+/*sidebar structure */
+#sidebar{
+width: 250px;
+height: 100%;
+position: fixed;
+top:0;
+bottom: 0;
+     padding:0;
+    margin:0;
+    display: inherit;
+}
+
+
+#sidebar ul{
+height: 100%;
+    padding:0;
+    margin:0;
+    
+}
+
+#sidebar ul li{
+      list-style: none;
+    background-color:#fff;
+    float: left;
+    width:250px;
+    height: 24%; /* fallback for non-calc() browsers */
+   height: calc(100% / 4);
+    box-sizing: border-box;  
+    text-transform: uppercase;
+    color:#fff;
+    
+}
+
+#h4{
+    font-size: 17px;
+    font-style: italic;
+    font-weight: 700;
+    color:#fff;
+    text-transform: capitalize;
+}
+
+#sidebar p{
+color: #fff;
+margin-left: 55px;    
+}
+
+
+
+#photo1{
+    background-image: url(img/photo1.jpg);
+    background-repeat:no-repeat;
+    background-size: cover;  
+    
+}
+
+#photo2{
+    background-image: url(img/photo2.jpg);
+        background-repeat:no-repeat;  
+    background-size: cover;  
+}
+
+#photo3{
+    background-image: url(img/photo3.jpg);
+        background-repeat:no-repeat;
+      background-size: cover;  
+}
+
+#photo4{
+    background-image: url(img/photo4.jpg);
+        background-repeat:no-repeat;
+      background-size: cover;  
+}
+
+/*sidebar story title alignments */
+
+#photo1 h4{
+position: absolute;
+bottom: 83%;
+margin-left: 15px;
+}
+
+#photo2 h4{
+ position: absolute;
+    bottom: 58%;
+    margin-left: 15px;       
+}
+
+#photo3 h4{
+   position: absolute;
+    bottom: 33%;
+    margin-left: 15px;     
+}
+
+#photo4 h4{
+ position: absolute;
+    bottom: 8%;
+    margin-left: 15px;       
+}
+
+
+/*general topic labels*/
+#photo1 p{
+position: absolute;
+bottom: 78%;
+}
+
+#photo2 p{
+position: absolute;
+bottom: 53%;
+}
+
+#photo3 p{
+position: absolute;
+bottom: 28%;
+}
+
+#photo4 p{
+position: absolute;
+bottom: 3%;
+}
+
+
+
+/*sidebar icon placement*/
+#sidebar img{
+margin-left: 15px;
+margin-top: 10px;
+
+
+}
+
+
+#photo1 img{
+    position: absolute;
+    bottom: 78%;
+}
+
+#photo2 img{
+    position: absolute;
+    bottom: 53%;    
+}
+#photo3 img{
+     position: absolute;
+    bottom: 28%;   
+}
+#photo4 img{
+     position: absolute;
+    bottom: 3%;   
+}
+
+/* wrapper that holds the homepage intro text written by Serena Lei*/
+#homecontainer{
+width:950px;
+margin:0 auto;
+padding-left:250px;
+padding-top:300px;
+
+}
+
+#homecontainer p{
+margin-bottom:15px;
+}
+
+/*browser windows smaller than 1100px*/
+@media (max-width: 1050px) {
+	
+#homecontainer{
+width: 750px;
+margin: 0 auto;
+padding-left: 249px;
+padding-top: 250px;}
+}
+
+
+/*browser windows smaller than 850px*/
+@media (max-width: 850px) {
+	
+#homecontainer{
+width: 600px;
+margin: 0 auto;
+padding-left: 225px;
+padding-top: 200px;}
+}
+
+/*browser windows smaller than 850px*/
+@media (max-width: 699px) {
+	
+#homecontainer{
+width: 100%;
+margin: 0 auto;
+padding-left: 0px;
+padding-top: 75px;
+}
+
+#sidebar{
+display: none;
+}
+    
+#wrapper{
+width: 85%;
+margin: 0 auto;
+    }
+}
