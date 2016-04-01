@@ -9,14 +9,14 @@
     <meta name="description" content="">
     <meta name="author" content="">
    
+      <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
 
-    <title></title>
 <link rel="stylesheet" href="style.css" type="text/css">
-      
 
-
-
-    
+<!--style sheets for Ben Chartoff's graphic -->
+<link rel="stylesheet" type="text/css" href="css/main.css">
+<link rel="stylesheet" type="text/css" href="css/urban-text.css">
+ 
   </head>
 
   <body>
@@ -53,8 +53,20 @@
                 </div>
       
       
-    <div id="homecontainer">
+    <div id="mobilenavcontainer">
 
+        <nav class="mobile">
+             <button>toggle</button>
+            <div>
+    <a href="#">Mobile 1</a>
+    <a href="#">Mobile 2</a>
+    <a href="#">Mobile 3</a>
+    <a href="#">Mobile 4</a>
+  </div>
+        </nav>
+          </div>
+          
+  <div id="homecontainer">
     <div id="urbanu"><img src="img/u.png" alt="urban institute's logo"/></div>
         
      <h1>Social determinates of health</h1>
@@ -105,6 +117,10 @@
         <p><span class="lead">Health from Birth to Old Age</span></p>
         <p>Every stage of life offers opportunities for promoting and protecting health. Before we’re born, our health is shaped by our parents’ <a href="http://www.ncbi.nlm.nih.gov/pubmed/16441686" target="_blank">health and well-being</a>. And our <a href="earliest experiences as babies" target="_blank">earliest experiences</a> as babies can have long-term consequences for our health as adults. 
 </p>
+        
+        <div id="graphic" class="pym" style="max-width:700px"></div>
+
+   
 
    <p> Early childhood education is one of the most promising investments for lifelong health. <a href="http://www.commissiononhealth.org/PDF/c270deb3-ba42-4fbd-baeb-2cd65956f00e/Issue Brief 6 Sept 09 - Education and Health.pdf" target="_blank">Education and health</a> are closely tied: people with more education tend to live longer, healthier lives than those with less education. And being healthy improves student attendance and performance throughout childhood. </p>
 
@@ -144,7 +160,8 @@
         
         <p>  <span class="credits bold">WRITING</span><br><span class="credits"> Serena LEI; MATTHEW JOHNSON; LYDIA THOMPSON</span></p>
         <p><span class="credits bold">Photography</span><br><span class="credits">LYDIA THOMPSON; MATTHEW JOHNSON</span></p>         
-        <p><span class="credits bold">Design & development</span> <br><span class="credits">Christina Baird</span></p>                                                                                                     
+        <p><span class="credits bold">Design</span> <br><span class="credits">Christina Baird</span></p>   
+         <p><span class="credits bold">Development</span> <br><span class="credits">Christina Baird; Jerry Ta</span></p>                                                                                            
 
 
     
@@ -154,7 +171,16 @@
 </div><!-- /wrapper -->
   
    
+ <script type="text/javascript" src="lib/pym.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> 
 
-
+<script>
+        var pym = new pym.Parent('graphic', 'child.html', {});
+    </script>
+      
+      <script>$('button').click(function() {
+  $(this).toggleClass('expanded').siblings('div').slideToggle();
+});
+</script>
   </body>
 </html>
