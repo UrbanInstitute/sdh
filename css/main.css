@@ -37,6 +37,9 @@ body {
 .axis path {
     display: none;
 }
+.axis-show.a2, .axis-show.a1{
+    display: none;
+}
 
 .axis line {
     stroke: #000;
@@ -183,7 +186,7 @@ rect.health_0{
     top: 0;
     left: 0;
 }
-@media (max-width:580px){
+@media (max-width:605px){
     #tabletTest{
         display: block;
     }
