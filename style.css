@@ -420,7 +420,11 @@ margin-bottom:15px;
 }
 /*close image at top of each story*/
 
-
+#app{
+    background-image: url(img/app/3074.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 
 /**** headroom.js that allows the header to appear on scroll up **/
 
