@@ -43,7 +43,7 @@ function drawGraphic(container_width) {
     console.log(container_width)
     var TABLET = d3.select("#tabletTest").style("display") == "block"
     var PHONE = d3.select("#phoneTest").style("display") == "block"
-    var LABELS = ["Workers have paid sick and vacation leave and pension or retirement contribution", "Neighborhood has sidewalks, parks or playgrounds, recreation center, and library", "Individuals in excellent or very good health"];
+    var LABELS = ["Workers have paid sick and vacation leave and pension or retirement contributions", "Neighborhood has sidewalks, parks or playgrounds, a recreation center, and a library", "Individuals in excellent or very good health"];
     var VALUES = ["leave", "ammenities", "health"];
 
     data.forEach(function (d) {
@@ -61,7 +61,7 @@ function drawGraphic(container_width) {
         top: 35,
         right: 75,
         bottom: 95,
-        left: 90
+        left: 130
     };
 
     var h;
@@ -195,10 +195,11 @@ function drawGraphic(container_width) {
     var yAxis = d3.svg.axis()
         .scale(y)
         .tickSize(0)
-        .orient("left");
+        .orient("left")
+        .tickFormat(function(d){ console.log(d); return d.replace("-","–")});
 
     var gy = svg.append("g")
-        .attr("class", "y axis-show")
+        .attr("class", "y axis-show a"  + String(i))
         .call(yAxis);
     gy.selectAll("text")
         .attr("dx", -4);
