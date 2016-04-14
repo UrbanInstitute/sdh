@@ -426,6 +426,11 @@ margin-bottom:15px;
     background-repeat: no-repeat;
 }
 
+#ghhi{
+    background-image: url(img/ghhi/0223.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 /**** headroom.js that allows the header to appear on scroll up **/
 
 #header{
@@ -551,6 +556,27 @@ margin-bottom:15px;
     float:right;
 }
 
+
+
+/**************caption styles*************/
+
+figcaption{
+font-size: 13px;
+color:#666;
+line-height: 1.3;
+
+}
+
+/*mobile captions hidden so that when images go from side by side to stacked the caption labels make sense*/
+.desktop_caption{
+display: block; 
+    
+}
+
+.mobile_caption{
+    display: none;
+}
+
 /* OPEN styles for vertical images that are floated left with a caption*/
 
 #nfp1 {
@@ -562,19 +588,22 @@ margin-bottom: 10px;
    margin-right:25px;
    margin-bottom:50px; 
 }
+
+.figureHalfLeftSpacingShallow{
+   margin-right:25px;
+   margin-bottom:25px; 
+}
 /* CLOSE styles for vertical images that are floated left with a caption*/
+
 
 /*spacing for full width images with captions directly below them*/
 #nfp7, #nfp8, #nfp9{
  margin-bottom: 10px;   
 }
 
-/*caption styles*/
-
-figcaption{
-font-size: 13px;
-color:#666;
-line-height: 1.3;
+/*spacing for full width images with captions that are stacked*/
+.belowcaption_forty{
+ margin-bottom: 40px;   
 }
 
 /***********captions styles******************/
@@ -634,11 +663,13 @@ padding-left: 249px;
 padding-top: 250px;
 
 }
-  
+
+    
 .captions, figcaption{
         padding-left:30px;
         padding-right: 30px;
-    } 
+}
+    
 .leadimage {
 height: 300px;
 width: 100%;
@@ -722,6 +753,16 @@ width: 100%;
 #nfp3{
     margin-bottom:3px;
 }
+    
+.desktop_caption{
+display: none; 
+    
+}
+
+.mobile_caption{
+display: block;
+}
+    
 }
 
 @media (max-width: 450px) {
