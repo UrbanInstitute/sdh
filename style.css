@@ -259,8 +259,10 @@ height: 100%;
 }
 
 #sidebar p{
-color: #fff;
-margin-left: 55px;    
+color: #e6e6e6;
+margin-left: 55px; 
+    font-size:15px;
+
 }
 
 
@@ -403,6 +405,19 @@ margin-bottom:15px;
   display: none;  
 }
 
+
+
+
+/**********twitter styles******/
+.callOut{
+  font-size:27px;
+  color:#999;
+    font-weight: 300;
+    margin-top:20px;
+    margin-bottom:20px;
+
+    
+}
 /**************** story page *******************/
 
 
@@ -493,7 +508,7 @@ clear: both;
 /*story title */  
 H2{
     font-style: italic;
-    font-size:26px;
+    font-size:32px;
     color:#1696d2;
     font-weight: 400;
 }
