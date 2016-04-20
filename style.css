@@ -10,7 +10,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 body, html {
-     color: #333333;
+     color: #000;
      font-family: "Lato",sans-serif;
      font-size: 16px;
      height: 100%;
@@ -54,31 +54,6 @@ table {
 }
 
 
-
-/*video trailer*/
-#close{
-position: absolute;
-top:10px;
-right:0px;
-}
-
-    #myVideo{
-        position: fixed;
-    top: 50%;
-    left: 50%;
-    min-width:88%;
-    min-height:88%;
-    width: auto;
-    height: auto;
-    z-index: -100;
-    -ms-transform: translateX(-50%) translateY(-50%);
-    -moz-transform: translateX(-50%) translateY(-50%);
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
-}
-
-
-
 a{
  color:#1696d2;
  text-decoration: none;
@@ -97,6 +72,16 @@ h1{
     color:#000;
     margin-bottom: 5px;
 }
+
+
+h5{
+  color:#666;
+ font-size:22px;
+ text-transform: none;
+    font-weight: 300;
+    
+}
+
 
 .credits{
   font-size:12px;
@@ -128,7 +113,7 @@ margin-right:5px;
 
 
 p{
-    color:#333;   
+    color:#000;   
 }
 
 .lead{
@@ -350,12 +335,11 @@ height: 100%;
 }
 
 
-#h4{
-    font-size: 17px;
-    font-style: italic;
-    font-weight: 700;
+h4{
+    font-size: 21px;
+    font-weight: 400;
     color:#fff;
-    text-transform: capitalize;
+  text-transform:capitalize;
 }
 
 #sidebar p{
@@ -511,7 +495,7 @@ margin-bottom:15px;
 /**********twitter styles******/
 .callOut{
   font-size:27px;
-  color:#999;
+  color:#666;
     font-weight: 300;
     margin-top:20px;
     margin-bottom:20px;
@@ -524,7 +508,7 @@ margin-bottom:15px;
 
 
 .callOut a{
-    color:#333;
+    color:#666;
 }
 .callOut a:hover{
     color:#fff;
