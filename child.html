@@ -25,6 +25,7 @@
     <script>
         $(window).load(function () {
             if (Modernizr.svg) {
+                var data_url = "data/sdh.csv";
                 d3.csv(data_url, function (error, rates) {
                     data = rates;
                     pymChild = new pym.Child({

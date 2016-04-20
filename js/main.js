@@ -40,7 +40,6 @@ function wrap(text, width) {
 
 
 function drawGraphic(container_width) {
-    console.log(container_width)
     var TABLET = d3.select("#tabletTest").style("display") == "block"
     var PHONE = d3.select("#phoneTest").style("display") == "block"
     var LABELS = ["Workers have paid sick and vacation leave and pension or retirement contributions", "Neighborhood has sidewalks, parks or playgrounds, a recreation center, and a library", "Individuals in excellent or very good health"];
@@ -196,7 +195,7 @@ function drawGraphic(container_width) {
         .scale(y)
         .tickSize(0)
         .orient("left")
-        .tickFormat(function(d){ console.log(d); return d.replace("-","–")});
+        .tickFormat(function(d){ return d.replace("-","–")});
 
     var gy = svg.append("g")
         .attr("class", "y axis-show a"  + String(i))
