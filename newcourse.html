@@ -9,30 +9,47 @@
     <meta name="description" content="">
     <meta name="author" content="">
    
+      <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
 
-    <title></title>
+<!--for the header-->
+<link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">   
+<link rel="stylesheet" type="text/css" href="css/urban-header.css">
+      
+<!--project style sheet-->
 <link rel="stylesheet" href="style.css" type="text/css">
-<script type="text/javascript" src="js/headroom.min.js"></script>
- 
   </head>
+
 
   <body>
       
+            <div id="header-pinned" class="no-touch">
 
- 
-          
+            <a target="_blank" href="http://www.urban.org" title="Home" rel="home" class="site-logo"></a>
+            <div class="title"><span class="feature-link"><a href="http://www.urban.org/features" class="title-linkback">Features</a> <span>: :</span> </span><a href="index.html" class="title-linkback">The Picture of Health</a>
+            </div>
+            <div class="share-icons">
+                <div class="shareThisP">
+                    <span onclick="toggle_visibility('shareBox');">
+                            <div class="shareThisB"></div>
+                        </span>
+                    <div class="shareThisW" id="shareBox">
+
+                        <div class="addthis_toolbox addthis_default_style  " addthis:title="" addthis:url="">
+                            <a href="https://www.facebook.com/sharer/sharer.php?u= http://urbn.is/immigrants" target="_blank" class="addthis_button_facebook at300b" title="Facebook" onclick="toggle_visibility('shareBox');"><span class="at4-icon aticon-facebook" style="background-color: rgb(48, 88, 145);"><span class="at_a11y">Share on facebook</span></span></a>
+
+                            <a href="http://twitter.com/intent/tweet?text=Visualizing%20trends%20for%20children%20of%20immigrants%3A%20http%3A%2F%2Furbn.is%2Fimmigrants%20(via%20%40urbaninstitute)" target="_blank" class="addthis_button_twitter at300b" title="Tweet" onclick="toggle_visibility('shareBox');"><span class="at4-icon aticon-twitter" style="background-color: rgb(44, 168, 210);"><span class="at_a11y">Share on twitter</span></span></a>
+
+                            <a href="mailto:%20?Subject=New interactive from the Urban Institute &amp;Body=Hi! I thought you'd be interested in this new interactive from the Urban Institute: “Visualizing Trends for Children of Immigrants” http://urbn.is/immigrants" target="_blank" class="addthis_button_email at300b" target="_blank" title="Email" onclick="toggle_visibility('shareBox');"><span class="at4-icon aticon-email" style="background-color: rgb(115, 138, 141);"><span class="at_a11y">Share on email</span></span></a>
+                            <div class="atclear"></div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+    </div>
 <div class="leadimage" id="app">
-    
-      <header id="header">
-                <nav>
-                    <ul id="homeicon">
-                    <a href="index.html" ><li><img src="img/darkHome.png" alt="house icons">Social Determinates of Health</li></a>
-                    </ul>
-
-                    </nav>
-
-      </header>
-           
+      
 </div>
        
  
@@ -202,30 +219,16 @@
 <p>Ludus quando et vel, saperet sententiae voluptatum no pri. Ne decore consetetur delicatissimi has, usu purto salutatus cu, eu eius elitr putant sit.</p>
           
     
-      </div>
+      </div> 
+    
 
-           
+
+            
+      
               
 
-     
-<script src="js/vendor/jquery.min.js"></script> 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>    
-<script> var header = document.querySelector("header");
 
-new Headroom(header, {
-  tolerance: {
-    down : 3,
-    up : 4
-  },
-  offset : 0,
-  classes: {
-    initial: "slide",
-    pinned: "slide--reset",
-    unpinned: "slide--up"
-  }
-}).init();
-
-</script>
+<script src="js/header.js"></script>
 
   </body>
 </html>

@@ -10,13 +10,20 @@
     <meta name="author" content="">
    
       <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
-
+<!--project style sheet-->
 <link rel="stylesheet" href="style.css" type="text/css">
 
 <!--style sheets for Ben Chartoff's graphic -->
 <link rel="stylesheet" type="text/css" href="css/main.css">
 <link rel="stylesheet" type="text/css" href="css/urban-text.css">
- 
+
+<!--for the header-->
+<link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+      
+<link rel="stylesheet" type="text/css" href="css/urban-header.css">
+      
+<!--project style sheet-->
+<link rel="stylesheet" href="style.css" type="text/css">
   </head>
 
   <body>
@@ -26,17 +33,77 @@
 
       <div id="selectme" class="wrapper">
 
+          <!--<header class="urbanHeader">
+                    <div id="share">
+                        <div id="logo"><a href="http://www.urban.org" target="_blank"><img id="fullLogo" src="img/logo.png" alt="The Urban Institute" /></a>
+                        </div>
+                        <p><span class="urbanHeaderLabel"><a href="http://www.urban.org/features">Features</a> : : <a href="index.html">The Picture of Health</a></span></p>
+                        
+                        <p><span class="urbanHeaderLabelMobile"><a href="index.html">The Picture of Health</a></span></p>
+                        
+                        <div id="shareMaster">
+                            <div id="shareCircle" class="circle">
+                            <i class="fa fa-share"></i>
+                            </div>
+                        </div>
+                        
+                        <div id="socials">
+                        <a href="https://twitter.com/intent/tweet?text=Get%20a%20sneak%20peek%20at%20%40urbaninstitute%27s%20new%20website%3A%20http%3A%2F%2Furbn.is%2Fsitepreview" target="_blank">
+                            <div id="twitter" class="circle">
+                                <i class="fa fa-twitter"></i>
+                            </div>
+                        </a>
+                        <a href="https://www.facebook.com/sharer/sharer.php?u=http://urbn.is/sitepreview" target="_blank">
+                            <div id="facebook" class="circle">
+                                <i class="fa fa-facebook"></i>
+                            </div>
+                        </a>
+                        <a href="mailto:%20?Subject=The new urban.org&Body=Hi! I thought you might want to get a sneak peek at the Urban Institute's new website: http://urbn.is/sitepreview." target="_blank">
+                            <div id="email" class="circle">
+                                <i class="fa fa-envelope"></i>
+                            </div>
+                        </a>
+                        </div>
+                    </div>
+
+          </header>-->
+          <div id="header-pinned" class="no-touch">
+       
+            <a target="_blank" href="http://www.urban.org" title="Home" rel="home" class="site-logo"></a>
+            <div class="title"><span class="feature-link"><a href="http://www.urban.org/features" class="title-linkback">Features</a> <span>: :</span> </span><a href="index.html" class="title-linkback">The Picture of Health</a>
+            </div>
+            <div class="share-icons">
+                <div class="shareThisP">
+                    <span onclick="toggle_visibility('shareBox');">
+                            <div class="shareThisB"></div>
+                        </span>
+                    <div class="shareThisW" id="shareBox">
+
+                        <div class="addthis_toolbox addthis_default_style  " addthis:title="" addthis:url="">
+                            <a href="https://www.facebook.com/sharer/sharer.php?u= http://urbn.is/immigrants" target="_blank" class="addthis_button_facebook at300b" title="Facebook" onclick="toggle_visibility('shareBox');"><span class="at4-icon aticon-facebook" style="background-color: rgb(48, 88, 145);"><span class="at_a11y">Share on facebook</span></span></a>
+
+                            <a href="http://twitter.com/intent/tweet?text=Visualizing%20trends%20for%20children%20of%20immigrants%3A%20http%3A%2F%2Furbn.is%2Fimmigrants%20(via%20%40urbaninstitute)" target="_blank" class="addthis_button_twitter at300b" title="Tweet" onclick="toggle_visibility('shareBox');"><span class="at4-icon aticon-twitter" style="background-color: rgb(44, 168, 210);"><span class="at_a11y">Share on twitter</span></span></a>
+
+                            <a href="mailto:%20?Subject=New interactive from the Urban Institute &amp;Body=Hi! I thought you'd be interested in this new interactive from the Urban Institute: “Visualizing Trends for Children of Immigrants” http://urbn.is/immigrants" target="_blank" class="addthis_button_email at300b" target="_blank" title="Email" onclick="toggle_visibility('shareBox');"><span class="at4-icon aticon-email" style="background-color: rgb(115, 138, 141);"><span class="at_a11y">Share on email</span></span></a>
+                            <div class="atclear"></div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+    
+    </div>
           
           <div id="sidebar">
                     <ul>
-                    <li id="photo1"><a href="#"><h4>Video overview</h4></a>
+                    <li id="photo1"><a href="video.html"><h4>Video overview</h4></a>
                     </li>
                         
-                        <li id="photo2"> <a href="nfp.html"><h4>Becoming Mom</h4><img src="img/health.png" alt="house icons"><p>Health & social care</p></a></li>  
+                        <li id="photo2"> <a href="becomingmom.html"><h4>Becoming Mom</h4><img src="img/health.png" alt="house icons"><p>Health & social care</p></a></li>  
                         
-                    <li id="photo3"><a href="#"><h4>Homesick</h4><img src="img/housing.png" alt="house icons"><p>Housing</p></a></li>   
+                    <li id="photo3"><a href="homesick.html"><h4>Homesick</h4><img src="img/housing.png" alt="house icons"><p>Housing</p></a></li>   
                         
-                    <li id="photo4"><a href="apprentice.html"><h4>Charting a New Course</h4><img src="img/book.png" alt="house icons"><p>Education</p></a></li>                
+                    <li id="photo4"><a href="newcourse.html"><h4>Charting a New Course</h4><img src="img/book.png" alt="house icons"><p>Education</p></a></li>                
                     </ul>       
           
                 </div>
@@ -47,16 +114,16 @@
         <nav class="mobile">
              <button>toggle</button>
             <div>
-    <a href="#">Video overview</a>
-    <a href="#">Becoming Mom</a>
-    <a href="#">Homesick</a>
-    <a href="#">Charting a New Course</a>
+    <a href="video.html">Video overview</a>
+    <a href="becomingmom.html">Becoming Mom</a>
+    <a href="homesick.html">Homesick</a>
+    <a href="newcourse.html">Charting a New Course</a>
   </div>
         </nav>
           </div>
           
   <div id="homecontainer">
-    <div id="urbanu"><img src="img/u.png" alt="urban institute's logo"/></div>
+  
         
      <h1>The Picture of Health</h1>
   
@@ -78,12 +145,11 @@
         <p><span class="lead emphasis">The United States <a href="http://www.oecd.org/unitedstates/Briefing-Note-UNITED-STATES-2014.pdf" target="_blank">spends</a> nearly twice as much per person on health care as other rich nations, but we’re no healthier for it. </span></p>
         
         <p>Americans are sicker and die younger than people in other high-income countries. We have <a href="http://iom.nationalacademies.org/~/media/Files/Report Files/2013/US-Health-International-Perspective/USHealth_Intl_PerspectiveRB.pdf" target="_blank">higher rates</a> of infant mortality, obesity, heart disease, and AIDS. We’re also more likely to die from traffic accidents, drug overdoses, and gunshot wounds.</p>
-        <br>
-        <p><span class="callOut">Americans are sicker and die younger than people in other high-income countries.</span></p>
-       <br>
       
         <p>“Study after study confirms that the health of Americans is suffering dramatically and even slipping in some cases,” according to <a href="http://www.urban.org/author/laudan-y-aron" target="_blank">Laudan Aron</a>, a senior fellow at the Urban Institute.</p>
-        
+          <br>
+        <p><span class="callOut"><a href="#">Americans are sicker and die younger than people in other high-income countries.</a></span> <img src="img/tweet.png"></p>
+       <br> 
           <p>We’re all vulnerable, regardless of age, race, or income. Even well-off Americans are less healthy than their counterparts in other countries. We’re not used to hearing this, which is why Princeton economists Anne Case and Angus Deaton caused such a stir when they reported that <a href="(http://www.washingtonpost.com/sf/national/2016/04/10/a-new-divide-in-american-death/" target="_blank">death rates</a> for <a href="http://www.nytimes.com/2015/11/03/health/death-rates-rising-for-middle-aged-white-americans-study-finds.html" target="_blank">white, middle-aged Americans are actually rising</a>.</p>
         
           <p>It’s also why the graphic below is so startling, particularly the trend among American <a href="http://healthaffairs.org/blog/2015/11/10/to-understand-climbing-death-rates-among-whites-look-to-women-of-childbearing-age/" target="_blank">women</a>.
@@ -117,7 +183,7 @@
    <p>Early childhood education is one of the most promising investments for lifelong health. <a href="http://www.commissiononhealth.org/PDF/c270deb3-ba42-4fbd-baeb-2cd65956f00e/Issue Brief 6 Sept 09 - Education and Health.pdf" target="_blank">Education and health</a> are closely tied: people with more education tend to live longer, healthier lives than those with less education. And being healthy improves student attendance and performance throughout childhood. </p>
 
       <br>
-      <p><span class=callOut>Early childhood education is one of the most promising investments for lifelong health.</span></p>
+      <p><span class=callOut><a href="#">Early childhood education is one of the most promising investments for lifelong health.</a></span><img src="img/tweet.png"></p>
       <br>
       
   <p> In <a href="http://www.urban.org/urban-wire/gauge-health-your-whole-community-look-your-teens" target="_blank">adolescence</a>, teenagers start to make more choices on their own. They’re more influenced by social media and by people outside their families, such as peers, coaches, and faith-based leaders. </p>
@@ -151,8 +217,8 @@
               </a>
                
             </div>         
-  <hr>    
-        <p><span class="credits bold">RESEARCH</span><br><span class="credits">LAUDY AARON; LISA DUBAY; ELAINE WAXMAN</span></p>
+      <hr>    <p><span class="credits">This project was funded with support from the Lawrence & Rebecca Stern Family Foundation Inc</span></p>  
+        <p><span class="credits bold">RESEARCH</span><br><span class="credits">LAUDY ARON; LISA DUBAY; ELAINE WAXMAN</span></p>
         <p>  <span class="credits bold">WRITING</span><br><span class="credits"> Serena LEI; MATTHEW JOHNSON; LYDIA THOMPSON</span></p>
         <p><span class="credits bold">Photography</span><br><span class="credits">LYDIA THOMPSON; MATTHEW JOHNSON</span></p>         
         <p><span class="credits bold">Design</span> <br><span class="credits">Christina Baird; Ben Chartoff</span></p>   
@@ -160,6 +226,7 @@
       <p><span class="credits bold">Editorial</span> <br><span class="credits">Michael Marazzi</span></p>
 
 <br>
+    
     <p><span class="credits">Copyright © <a href="http://www.urban.org">Urban Institute</a> May 2016. <a href="#">View this project on GitHub</a></span></p>
 
     </div> 
@@ -178,5 +245,6 @@
   $(this).toggleClass('expanded').siblings('div').slideToggle();
 });
 </script>
+          <script src="js/header.js"></script>
   </body>
 </html>

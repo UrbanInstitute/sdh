@@ -93,7 +93,7 @@ a:hover{
 
 h1{
     font-weight: 700;
-    font-size:30px;
+    font-size:35px;
     color:#000;
     margin-bottom: 5px;
 }
@@ -106,10 +106,6 @@ h1{
   
 }
 
-
-#urbanu{
-margin-bottom: 10px;
-}
 
 
 /*social media icons on index*/
@@ -157,7 +153,7 @@ p{
   display: none;
 position: relative;
 width: 100%;
-top: 20px;
+top: 65px;
 height: 40px;
 margin-left: 0px;
 margin-top: 0px;
@@ -165,7 +161,7 @@ margin-top: 0px;
 }
 .mobile div{
     display: none;
-    top: 50px;
+    top: 65px;
 position: relative;
 }
 
@@ -211,7 +207,111 @@ mobile a:focus {
   background: #e7e7e7;
 }
 
+/*URBAN STICKY HEADER**************************/
+.urbanHeader{
+position: fixed;
+top: 0px;
+z-index: 1030;
+width: 100%;
+background-color: #fff;
+border: solid 1px #e7e7e7;
+}
+#share {
+    height: 48px;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
 
+    position: relative;
+}
+#logo {
+    display: inline-block;
+    padding-left: 15px;
+}
+
+#share p{
+    display: inline-block;
+    font-size: 20px;
+    margin-left: 30px;
+    position: relative;
+    bottom: 20px;
+}
+
+#share p a{
+    color:#333;
+    
+}
+#share p a:hover{
+   color:#1696d2;
+}
+
+.urbanHeaderLabel{
+    display:inline-block;
+}
+
+.urbanHeaderLabelMobile{
+    display: none;
+}
+#shareMaster {
+    display: inline !important;
+    float: right;
+    height: 48px;
+    opacity: 1;
+    padding-left: 20px;
+    width: 70px;
+}
+.circle {
+    background-color: #cccccc;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    color: #ffffff;
+    display: inline-block;
+    height: 25px;
+    line-height: 25px;
+    margin-right: 5px;
+    margin-top: 10px;
+    text-align: center;
+    width: 25px;
+}
+.circle:hover {
+    background-color: #0096d2;
+}
+#socials a {
+    color: #ffffff;
+}
+#socials a:hover {
+    color: #0096d2;
+}
+#socials {
+    color: #ffffff;
+    float: right;
+    opacity: 0;
+    transition-delay: 0s;
+    transition-duration: 0.25s;
+    transition-property: opacity;
+    transition-timing-function: ease-in-out;
+}
+#share:hover #shareMaster {
+    opacity: 0.5;
+    transition-delay: 0s;
+    transition-duration: 0.25s;
+    transition-property: opacity;
+    transition-timing-function: ease-in-out;
+}
+#share:hover #socials {
+    opacity: 1;
+    transition-delay: 0s;
+    transition-duration: 0.25s;
+    transition-property: opacity;
+    transition-timing-function: ease-in-out;
+}
+
+
+
+/************************************************CLOSE URBAN STICKY HEADER*/
 
 
 /*sidebar structure */
@@ -261,7 +361,7 @@ height: 100%;
 #sidebar p{
 color: #e6e6e6;
 margin-left: 55px; 
-    font-size:15px;
+    font-size:14px;
 
 }
 
@@ -311,25 +411,25 @@ margin-left: 55px;
 
 #photo1 h4{
 position: absolute;
-bottom: 83%;
+bottom: 79%;
 margin-left: 15px;
 }
 
 #photo2 h4{
  position: absolute;
-    bottom: 58%;
+    bottom: 57%;
     margin-left: 15px;       
 }
 
 #photo3 h4{
    position: absolute;
-    bottom: 33%;
+    bottom: 32%;
     margin-left: 15px;     
 }
 
 #photo4 h4{
  position: absolute;
-    bottom: 8%;
+    bottom: 7.4%;
     margin-left: 15px;       
 }
 
@@ -387,7 +487,7 @@ margin-top: 10px;
 width:950px;
 margin:0 auto;
 padding-left:250px;
-padding-top:300px;
+padding-top:370px;
 
 }
 
@@ -415,8 +515,21 @@ margin-bottom:15px;
     font-weight: 300;
     margin-top:20px;
     margin-bottom:20px;
+    padding:3px;
+    background-color:#fff;
+    line-height: 1.4;
 
     
+}
+
+
+.callOut a{
+    color:#333;
+}
+.callOut a:hover{
+    color:#fff;
+
+    background-color:#1696d2;
 }
 /**************** story page *******************/
 
@@ -425,6 +538,8 @@ margin-bottom:15px;
 .leadimage{
   height:400px;
   width:100%;
+    position: relative;
+    top:50px;
     
 }
 
@@ -442,14 +557,14 @@ margin-bottom:15px;
 }
 
 #ghhi{
-    background-image: url(img/ghhi/0223.jpg);
+    background-image: url(img/ghhi/header.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
 /**** headroom.js that allows the header to appear on scroll up **/
 
 #header{
-    top: 0px;
+    top: 50px;
     position: fixed;
     width: 295px;
     z-index: 20;
@@ -725,7 +840,7 @@ padding-top: 200px;
 #homecontainer, #mobilenavcontainer {
 width: 100%;
 margin: 0 auto;
-padding: 0px 25px 45px;
+padding: 0px 25px 110px;
 }
     
 .storywrapper{
@@ -737,7 +852,7 @@ padding: 0px 0px 45px;
 .container{
 width:100%;
 margin:0 auto;
-padding:45px 30px 45px;
+padding:75px 30px 45px;
 }
 
 #sidebar{
@@ -750,7 +865,15 @@ display: none;
     .desktop{
         display: none;
     }
+ .urbanHeaderLabel{
+    display:none;
+}
+
+.urbanHeaderLabelMobile{
+    display:inline-block;
+}   
     
+
 #wrapper{
 width: 85%;
 margin: 0 auto;
@@ -769,6 +892,11 @@ width: 100%;
     margin-bottom:3px;
 }
     
+#nfp{
+    background-image: url(img/nfp/mobilestart.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 .desktop_caption{
 display: none; 
     
@@ -786,7 +914,33 @@ display: block;
   margin:0 auto;
     width:100%;
 }
- 
+    
+    #shareMaster{
+position: absolute;
+right: 0px;
+top: 0px;
+    }
+    
+    
+#socials{
+
+position: absolute;
+right: 24px;
+width: 45px;
+background-color: #fff;
+padding: 5px 25px 5px 20px;
+top: 50px;
+}
+
+    
+   /* #socials{
+        position: absolute;
+right: 0px;
+width: 55px;
+background-color: #fff;
+padding: 15px 5px 15px 15px;
+top: 49px;
+    }*/
 }
 
 
