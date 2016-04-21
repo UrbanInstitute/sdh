@@ -192,7 +192,7 @@ mobile a:focus {
   background: #e7e7e7;
 }
 
-/*URBAN STICKY HEADER**************************/
+/*URBAN STICKY HEADER
 .urbanHeader{
 position: fixed;
 top: 0px;
@@ -364,13 +364,13 @@ margin-left: 55px;
 }
 
 #photo3{
-    background-image: url(img/photo3.jpg);
+    background-image: url(img/photo4.jpg);
         background-repeat:no-repeat;
       background-size: cover;  
 }
 
 #photo4{
-    background-image: url(img/photo4.jpg);
+    background-image: url(img/photo3.jpg);
         background-repeat:no-repeat;
       background-size: cover;  
 }
