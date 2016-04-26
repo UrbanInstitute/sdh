@@ -731,17 +731,25 @@ margin-bottom: 10px;
 
 /*next story button*/
 #nextstory {
-     background-color: #1696d2;
-     border: medium none;
-     color: #ffffff;
-     float: right;
-     font-family: lato;
-     font-size: 18px;
-     font-weight: 400;
-     padding: 10px 15px;
-     min-width:125px;
-     margin-top: 45px;
-     margin-bottom: 60px;
+    background-color: #1696d2;
+    border: medium none;
+    color: #ffffff;
+    position: fixed;
+    text-align: left;
+    display: inline;
+    line-height: 0.8;
+    right: 0px;
+    top: 530px;
+    font-family: lato;
+    font-size: 35px;
+    font-weight: 400;
+    padding: 7px 0px 5px 10px;
+    width: 50px;
+    height: 45px;
+    transition: width 0.5s;
+    -webkit-transition: width 0.5s;
+    overflow: hidden;
+}
 }
 #nextstory a{
  text-decoration: none;
@@ -749,14 +757,94 @@ margin-bottom: 10px;
     
 }
 
+#nextstory p{
+    display: inline;
+    font-size:16px;
+    color:#fff;
+   position: relative;
+    bottom: 5px;
+    font-weight: 700;
+    text-transform: uppercase;
+    left:5px;
+   
+}
+
+
+#nextstory p .emphasis{
+  font-size: 16px;
+      font-weight: 400;
+    text-transform: none;
+    text-transform: none;
+    
+}
 #nextstory:hover{
  background-color:#000000;
  cursor:pointer;
+    width:200px;
+    height:85px;
 }
 
 /***********next story button ******************/
 
 
+
+
+
+/****************previous story button *******************/
+#prevstory {
+    background-color: #1696d2;
+    border: medium none;
+    color: #ffffff;
+    position: fixed;
+    text-align: left;
+    display: inline;
+    line-height: 0.8;
+    left: 0px;
+    top: 530px;
+    font-family: lato;
+    font-size: 35px;
+    font-weight: 400;
+    padding: 7px 0px 5px 20px;
+    width: 50px;
+    height: 45px;
+    transition: width 0.5s;
+    -webkit-transition: width 0.5s;
+    overflow: hidden;
+}
+}
+#prevstory a{
+ text-decoration: none;
+ color:#000000;     
+    
+}
+
+#prevstory p{
+    display: inline;
+    font-size:16px;
+    color:#fff;
+   position: relative;
+    bottom: 5px;
+    font-weight: 700;
+    text-transform: uppercase;
+    left:5px;
+   
+}
+
+
+#prevstory p .emphasis{
+  font-size: 16px;
+      font-weight: 400;
+    text-transform: none;
+    text-transform: none;
+    
+}
+#prevstory:hover{
+ background-color:#000000;
+ cursor:pointer;
+    width:200px;
+    height:85px;
+}
+/***********************/
 
 /*browser windows smaller than 1100px*/
 @media (max-width: 1050px) {
