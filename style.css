@@ -345,6 +345,9 @@ h4{
   text-transform:capitalize;
 }
 
+.lowercase{
+    text-transform: lowercase;
+}
 #sidebar p{
 color: #e6e6e6;
 margin-left: 55px; 
